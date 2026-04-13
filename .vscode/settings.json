@@ -1,7 +1,0 @@
-{
-    "clangd.arguments": [
-        "--query-driver=/usr/bin/arm-none-eabi-*"
-    ],
-    "latex-workshop.formatting.latex": "latexindent",
-    "latex-workshop.view.pdf.viewer": "tab"
-}
