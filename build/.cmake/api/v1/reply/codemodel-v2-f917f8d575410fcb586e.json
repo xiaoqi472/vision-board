@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rtthread",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_CPU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_CPU-Debug-22ce2608d2398582f2e5.json",
+					"name" : "rtt_CPU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_DeviceDrivers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_DeviceDrivers-Debug-3d10de85f19a72967f68.json",
+					"name" : "rtt_DeviceDrivers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Drivers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Drivers-Debug-85103abcca85fd342167.json",
+					"name" : "rtt_Drivers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Finsh::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Finsh-Debug-4fb872a251656ef3c1de.json",
+					"name" : "rtt_Finsh",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Kernel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Kernel-Debug-7b597e0090a48ab48336.json",
+					"name" : "rtt_Kernel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_Libc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_Libc-Debug-046c3fc6d1e372d9942d.json",
+					"name" : "rtt_Libc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_ra::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_ra-Debug-28ba457d6fd9c6f78b18.json",
+					"name" : "rtt_ra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtt_ra_gen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtt_ra_gen-Debug-e997945cc61c4f6e0443.json",
+					"name" : "rtt_ra_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rtthread.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rtthread.elf-Debug-e1f9fe177a989f1b2ea7.json",
+					"name" : "rtthread.elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build",
+		"source" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
