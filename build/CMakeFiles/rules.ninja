@@ -64,6 +64,16 @@ rule C_COMPILER__rtt_Finsh_unscanned_Debug
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER__rtt_FreeRTOS_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/usr/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER__rtt_Kernel_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc

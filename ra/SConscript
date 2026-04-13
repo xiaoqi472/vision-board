@@ -20,7 +20,9 @@ elif rtconfig.PLATFORM in GetGCCLikePLATFORM():
         CPPPATH = [ cwd + '/arm/CMSIS_5/CMSIS/Core/Include',
                     cwd + '/fsp/inc',
                     cwd + '/fsp/inc/api',
-                    cwd + '/fsp/inc/instances',]
+                    cwd + '/fsp/inc/instances',
+                    cwd + '/tes/dave2d/inc',
+                    cwd + '/tes/dave2d/inc/tes']
 
 group = DefineGroup('ra', src, depend = [''], CPPPATH = CPPPATH)
 Return('group')

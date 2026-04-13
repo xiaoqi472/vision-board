@@ -19,7 +19,7 @@ SET(CMAKE_CXX_COMPILER_WORKS TRUE)
 SET(CMAKE_OBJCOPY "/usr/bin/arm-none-eabi-objcopy")
 SET(CMAKE_SIZE "/usr/bin/arm-none-eabi-size")
 
-SET(CMAKE_EXE_LINKER_FLAGS " -march=armv8.1-m.main+mve.fp+fp.dp -mthumb -mfpu=fpv5-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rtthread.map,-cref,-u,Reset_Handler -T ${CMAKE_SOURCE_DIR}/script/fsp.ld -L script/ -Wl,--gc-sections,--print-memory-usage")
+SET(CMAKE_EXE_LINKER_FLAGS " -march=armv8.1-m.main+mve.fp+fp.dp -mthumb -mfpu=fpv5-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -Wl,--gc-sections,-Map=rtthread.map,-cref,-u,Reset_Handler -T ${CMAKE_SOURCE_DIR}/script/fsp.ld -L ../script/ -Wl,--gc-sections,--print-memory-usage")
 
 SET(CMAKE_C_STANDARD 11)
 SET(CMAKE_CXX_STANDARD 17)
@@ -36,6 +36,11 @@ INCLUDE_DIRECTORIES(
 	ra/fsp/inc
 	ra/fsp/inc/api
 	ra/fsp/inc/instances
+	ra/tes/dave2d/inc
+	ra/tes/dave2d/inc/tes
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/include/freertos
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/include
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/portable/rt-thread
 	ra_cfg/fsp_cfg
 	ra_cfg/fsp_cfg/bsp
 	../../../include
@@ -108,6 +113,15 @@ SET(RT_FINSH_SOURCES
 	../../../components/finsh/cmd.c
 )
 
+SET(RT_FREERTOS_SOURCES
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/event_groups.c
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/list.c
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/queue.c
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/tasks.c
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/timers.c
+	packages/FreeRTOS_Wrapper-latest/FreeRTOS/portable/rt-thread/port.c
+)
+
 SET(RT_KERNEL_SOURCES
 	../../../src/clock.c
 	../../../src/components.c
@@ -155,7 +169,15 @@ SET(RT_RA_SOURCES
 	ra/fsp/src/bsp/mcu/all/bsp_security.c
 	ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c
 	ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c
+	ra/fsp/src/r_ceu/r_ceu.c
+	ra/fsp/src/r_drw/r_drw_base.c
+	ra/fsp/src/r_drw/r_drw_irq.c
+	ra/fsp/src/r_drw/r_drw_memory.c
+	ra/fsp/src/r_glcdc/r_glcdc.c
+	ra/fsp/src/r_gpt/r_gpt.c
 	ra/fsp/src/r_ioport/r_ioport.c
+	ra/fsp/src/r_mipi_dsi/r_mipi_dsi.c
+	ra/fsp/src/r_mipi_phy/r_mipi_phy.c
 	ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c
 )
 
@@ -197,6 +219,7 @@ ADD_LIBRARY(rtt_CPU OBJECT ${RT_CPU_SOURCES})
 ADD_LIBRARY(rtt_DeviceDrivers OBJECT ${RT_DEVICEDRIVERS_SOURCES})
 ADD_LIBRARY(rtt_Drivers OBJECT ${RT_DRIVERS_SOURCES})
 ADD_LIBRARY(rtt_Finsh OBJECT ${RT_FINSH_SOURCES})
+ADD_LIBRARY(rtt_FreeRTOS OBJECT ${RT_FREERTOS_SOURCES})
 ADD_LIBRARY(rtt_Kernel OBJECT ${RT_KERNEL_SOURCES})
 ADD_LIBRARY(rtt_Libc OBJECT ${RT_LIBC_SOURCES})
 ADD_LIBRARY(rtt_ra OBJECT ${RT_RA_SOURCES})
@@ -220,6 +243,7 @@ TARGET_LINK_LIBRARIES(${CMAKE_PROJECT_NAME}.elf
 	rtt_DeviceDrivers
 	rtt_Drivers
 	rtt_Finsh
+	rtt_FreeRTOS
 	rtt_Kernel
 	rtt_Libc
 	rtt_ra

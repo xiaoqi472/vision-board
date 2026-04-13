@@ -2,6 +2,7 @@
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_DeviceDrivers.dir
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_Drivers.dir
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_Finsh.dir
+/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_FreeRTOS.dir
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_Kernel.dir
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_Libc.dir
 /home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/build/CMakeFiles/rtt_ra.dir
