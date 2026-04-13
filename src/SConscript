@@ -1,0 +1,19 @@
+import os
+from building import *
+
+cwd = GetCurrentDir()
+
+# 包含当前目录以及 app、components 下的 C 和 C++ 源文件
+src = Glob('*.c') + Glob('*.cpp')
+src += Glob('app/*.c') + Glob('app/*.cpp')
+src += Glob('components/*.c') + Glob('components/*.cpp')
+
+# 将这些目录加入头文件搜索路径，这样你 include 时就不必写长路径了
+CPPPATH = [
+    cwd,
+    os.path.join(cwd, 'app'),
+    os.path.join(cwd, 'components')
+]
+
+group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)
+Return('group')

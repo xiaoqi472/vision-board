@@ -38,13 +38,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 218,
+				"line" : 222,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 65,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
@@ -96,6 +96,18 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_gen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/app"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/components"
 				},
 				{
 					"backtrace" : 3,
@@ -278,6 +290,18 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_gen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/app"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/components"
 				},
 				{
 					"backtrace" : 3,

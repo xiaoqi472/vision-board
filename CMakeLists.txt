@@ -29,6 +29,9 @@ PROJECT(rtthread C CXX ASM)
 INCLUDE_DIRECTORIES(
 	.
 	ra_gen
+	src
+	src/app
+	src/components
 	board
 	board/ports
 	board/ports/wifi
@@ -72,7 +75,8 @@ ADD_DEFINITIONS(
 
 # Library source files
 SET(RT_APPLICATIONS_SOURCES
-	src/hal_entry.c
+	src/app/app_led.cpp
+	src/main.cpp
 )
 
 SET(RT_CPU_SOURCES

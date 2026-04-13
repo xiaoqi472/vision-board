@@ -2,19 +2,73 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CMakeFiles/rtt_ra_gen.dir/./ra_gen/common_data.c.obj"
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_clocks.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra_gen.dir/./ra_gen/hal_data.c.obj"
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_common.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra_gen.dir/./ra_gen/main.c.obj"
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_delay.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra_gen.dir/./ra_gen/pin_data.c.obj"
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_group_irq.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra_gen.dir/./ra_gen/vector_data.c.obj"
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_guard.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_io.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_irq.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_register_protection.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_rom_registers.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_sbrk.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_security.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_ceu/r_ceu.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_base.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_irq.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_memory.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_glcdc/r_glcdc.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_gpt/r_gpt.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_ioport/r_ioport.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_mipi_dsi/r_mipi_dsi.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_mipi_phy/r_mipi_phy.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c.obj"
 		}
 	],
 	"backtrace" : 1,
@@ -38,13 +92,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 226,
+				"line" : 229,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 65,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
@@ -96,6 +150,18 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_gen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/app"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/components"
 				},
 				{
 					"backtrace" : 3,
@@ -237,12 +303,30 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
-	"id" : "rtt_ra_gen::@6890427a1f51a3e7e1df",
-	"name" : "rtt_ra_gen",
+	"id" : "rtt_ra::@6890427a1f51a3e7e1df",
+	"name" : "rtt_ra",
 	"paths" : 
 	{
 		"build" : ".",
@@ -258,7 +342,25 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -267,31 +369,139 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra_gen/common_data.c",
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_clocks.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra_gen/hal_data.c",
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_common.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra_gen/main.c",
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_delay.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra_gen/pin_data.c",
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_group_irq.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra_gen/vector_data.c",
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_guard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_io.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_irq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_register_protection.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_rom_registers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_sbrk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/mcu/all/bsp_security.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_ceu/r_ceu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_drw/r_drw_base.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_drw/r_drw_irq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_drw/r_drw_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_glcdc/r_glcdc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_gpt/r_gpt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_ioport/r_ioport.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_mipi_dsi/r_mipi_dsi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_mipi_phy/r_mipi_phy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c",
 			"sourceGroupIndex" : 0
 		}
 	],

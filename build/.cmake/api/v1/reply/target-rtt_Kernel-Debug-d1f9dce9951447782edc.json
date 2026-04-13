@@ -2,73 +2,49 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_clocks.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/clock.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_common.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/components.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_delay.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/cpu_up.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_group_irq.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/defunct.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_guard.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/idle.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_io.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/ipc.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_irq.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/irq.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_register_protection.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/kservice.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_rom_registers.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/memheap.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_sbrk.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/mempool.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/mcu/all/bsp_security.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/object.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/scheduler_comm.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/scheduler_up.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_ceu/r_ceu.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/thread.c.obj"
 		},
 		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_base.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_irq.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_drw/r_drw_memory.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_glcdc/r_glcdc.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_gpt/r_gpt.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_ioport/r_ioport.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_mipi_dsi/r_mipi_dsi.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_mipi_phy/r_mipi_phy.c.obj"
-		},
-		{
-			"path" : "CMakeFiles/rtt_ra.dir/./ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c.obj"
+			"path" : "CMakeFiles/rtt_Kernel.dir/./home/wenbo/rt_workspace/rt-thread/src/timer.c.obj"
 		}
 	],
 	"backtrace" : 1,
@@ -78,6 +54,7 @@
 		[
 			"ADD_LIBRARY",
 			"ADD_DEFINITIONS",
+			"TARGET_COMPILE_DEFINITIONS",
 			"INCLUDE_DIRECTORIES"
 		],
 		"files" : 
@@ -92,17 +69,23 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 225,
+				"line" : 227,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 65,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 29,
 				"parent" : 0
@@ -139,140 +122,156 @@
 				{
 					"backtrace" : 2,
 					"define" : "__RTTHREAD__"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "__RT_KERNEL_SOURCE__"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/."
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_gen"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/app"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/src/components"
+				},
+				{
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/board"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/board/ports"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/board/ports/wifi"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/arm/CMSIS_5/CMSIS/Core/Include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/fsp/inc"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/fsp/inc/api"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/fsp/inc/instances"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/tes/dave2d/inc"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra/tes/dave2d/inc/tes"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/packages/FreeRTOS_Wrapper-latest/FreeRTOS/include/freertos"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/packages/FreeRTOS_Wrapper-latest/FreeRTOS/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/packages/FreeRTOS_Wrapper-latest/FreeRTOS/portable/rt-thread"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_cfg/fsp_cfg"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/ra_cfg/fsp_cfg/bsp"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../libcpu/arm/common"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../libcpu/arm/cortex-m85"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/net/utest"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/compilers/newlib"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/compilers/common/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/posix/ipc"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/posix/io/eventfd"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/posix/io/poll"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/libc/posix/io/epoll"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/drivers/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/drivers/smp_call"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/drivers/phy"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../../../components/finsh"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../libraries/HAL_Drivers/drivers"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../libraries/HAL_Drivers/drivers/config"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/wenbo/rt_workspace/rt-thread/bsp/renesas/ra8d1-vision-board/../libraries/HAL_Drivers"
 				}
 			],
@@ -301,20 +300,12 @@
 				11,
 				12,
 				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22
+				14
 			]
 		}
 	],
-	"id" : "rtt_ra::@6890427a1f51a3e7e1df",
-	"name" : "rtt_ra",
+	"id" : "rtt_Kernel::@6890427a1f51a3e7e1df",
+	"name" : "rtt_Kernel",
 	"paths" : 
 	{
 		"build" : ".",
@@ -340,15 +331,7 @@
 				11,
 				12,
 				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22
+				14
 			]
 		}
 	],
@@ -357,139 +340,91 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_clocks.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/clock.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_common.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/components.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_delay.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/cpu_up.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_group_irq.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/defunct.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_guard.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/idle.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_io.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/ipc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_irq.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/irq.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_register_protection.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/kservice.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_rom_registers.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/memheap.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_sbrk.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/mempool.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/mcu/all/bsp_security.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/object.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/scheduler_comm.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/scheduler_up.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_ceu/r_ceu.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/thread.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_drw/r_drw_base.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_drw/r_drw_irq.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_drw/r_drw_memory.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_glcdc/r_glcdc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_gpt/r_gpt.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_ioport/r_ioport.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_mipi_dsi/r_mipi_dsi.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_mipi_phy/r_mipi_phy.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ra/fsp/src/r_sci_b_uart/r_sci_b_uart.c",
+			"path" : "/home/wenbo/rt_workspace/rt-thread/src/timer.c",
 			"sourceGroupIndex" : 0
 		}
 	],
