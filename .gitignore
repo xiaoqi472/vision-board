@@ -1,5 +1,57 @@
-/RTE
-/Listings
-/Objects
-ra_cfg.txt
+# Build outputs
+build/
+dist/
+*.elf
+*.hex
+*.map
 
+# IDE/Editor
+.vscode/
+.settings/
+.cproject
+.project
+*.uvoptx
+*.uvprojx
+
+# CMake build artifacts
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt
+cmake_install.cmake
+compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Python cache
+__pycache__/
+.sconsign.dblite
+
+# Generated configuration
+.config
+.config.old
+ra_cfg.txt
+rtconfig.h
+rtconfig.py
+buildinfo.gpdsc
+configuration.xml
+
+# Secure Studio generated files
+.secure_azone
+.secure_rzone
+.secure_xml
+
+# Local cache
+.cache/
+CMakeFiles/
+
+# Local toolchain symlinks
+toolchain_bin/
+
+# Build intermediate files
+via/
+
+# Claude Code / AI agent files
+.agent/
+.claude/
+.api_xml

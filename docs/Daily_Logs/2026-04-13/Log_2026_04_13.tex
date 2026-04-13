@@ -1,0 +1,89 @@
+% !TEX program = xelatex
+\documentclass[cn, chinesefont=nofont, color=black, device=normal, 11pt]{elegantnote}
+
+% 中文字体设置 (遵循 skill 规范)
+\setCJKmainfont[AutoFakeSlant=0.2]{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+
+\title{Vision\_Board 研发日志}
+\author{Wenbo}
+\date{2026-04-13}
+
+\begin{document}
+\maketitle
+
+\section{今日目标}
+\begin{itemize}
+    \item 完善 LED 示例应用，验证面向对象线程管理框架的正确性。
+    \item 确保主线程正确挂起，防止空闲线程栈溢出崩溃。
+    \item 验证 FreeRTOS 线程调度与 RT-Thread 的共存稳定性。
+\end{itemize}
+
+\section{今日进展}
+本次提交完成了 LED 示例应用的完整实现，遵循嵌入式 C++ 高阶编程规范：
+
+\subsection{核心代码实现}
+\begin{enumerate}
+    \item \textbf{面向对象线程封装}（\texttt{src/app/app\_led.cpp/h}）：
+          \begin{itemize}
+              \item 类内部自行管理线程句柄与栈空间，外部调用者无需感知线程细节。
+              \item 使用 \texttt{rt\_thread\_t} 管理线程生命周期，调用 \texttt{start()} 即自动创建并启动线程。
+              \item 线程函数声明为 \texttt{private}，防止外部误操作。
+          \end{itemize}
+    \item \textbf{静态内存管理}：
+          \begin{itemize}
+              \item 全局静态实例 \texttt{AppLED sys\_led} 分配在 .bss/.data 段，不使用堆内存。
+              \item 线程栈大小固定为 512字节，符合嵌入式资源受限场景。
+          \end{itemize}
+    \item \textbf{HAL 层入口修复}（\texttt{src/main.cpp}）：
+          \begin{itemize}
+              \item 修复 \texttt{hal\_entry} 函数：主线程不再盲目返回，而是进入 \texttt{while(1)} 永久挂起。
+              \item 彻底根除因主线程提前退出、\texttt{tidle0} 空闲线程执行清理导致 Stack Overflow 的问题。
+          \end{itemize}
+\end{enumerate}
+
+\subsection{Git 提交记录}
+\begin{itemize}
+    \item \texttt{494d2e7} — \texttt{feat(app): 添加 LED 示例应用}
+\end{itemize}
+
+\section{项目进度概览}
+参照 \texttt{docs/Project\_Roadmap\.md}，当前各模块完成度如下：
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lp{6cm}}
+        \toprule
+        \textbf{模块}                  & \textbf{状态} \\
+        \midrule
+        网络中间件 (micro-ROS + TCP/HTTP) & [ ] 待完成     \\
+        静态内存池设计                      & [ ] 待完成     \\
+        零拷贝数据流转                      & [ ] 待完成     \\
+        硬件 JPEG 编码器                  & [ ] 待完成     \\
+        端侧 AI 推理部署                   & [ ] 待完成     \\
+        优先级调度防反转                     & [ ] 待完成     \\
+        ROS2 生态融合验证                  & [ ] 待完成     \\
+        全景可视化监控                      & [ ] 待完成     \\
+        \midrule
+        LED 示例应用                     & [x] 已完成 已完成 \\
+        FreeRTOS 基础集成                & [x] 已完成 已完成 \\
+        RA 平台图形支持                    & [x] 已完成 已完成 \\
+        RA8D1 BSP 基础框架               & [x] 已完成 已完成 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{问题与反思}
+\begin{itemize}
+    \item 昨日发现的 \texttt{hal\_entry} 函数提前返回导致系统崩溃的问题已彻底修复。
+    \item 后续新增应用模块时，应遵循相同的\"主线程永久挂起\"模式。
+\end{itemize}
+
+\section{明日计划}
+\begin{itemize}
+    \item 实现开发板端的摄像头驱动程序与 LCD 屏幕显示。
+    \item 设计静态图像缓冲区的基础框架（SPSC 队列）。
+\end{itemize}
+
+\end{document}

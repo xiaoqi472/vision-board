@@ -1,0 +1,42 @@
+% !TEX program = xelatex
+\documentclass[cn, chinesefont=nofont, color=black, device=normal, 11pt]{elegantnote}
+
+% 中文字体设置 (遵循 skill 规范)
+\setCJKmainfont[AutoFakeSlant=0.2]{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+
+\title{Vision\_Board 研发日志}
+\author{Wenbo}
+\date{2026-04-12}
+
+\begin{document}
+\maketitle
+
+\section{今日目标}
+\begin{itemize}
+    \item 重新梳理基于 micro-ROS 与双通道通信的视觉传感器架构规划。
+    \item 输出全英文重构的 SPSC 架构以及项目里程碑 Roadmap。
+    \item 搭建项目的独立 \LaTeX{} 每日日志系统，配置 Git 防止过程文件污染。
+\end{itemize}
+
+\section{技术梳理与难点记录}
+今日彻底明确了工程在未来的几个技术硬性指标（即从玩具代码走向工程化）：
+\begin{enumerate}
+    \item \textbf{内存架构管理}：彻底禁用了 \texttt{new/malloc/std::vector}，拥抱纯静态 SPSC 内存池。修复了由 \texttt{hal\_entry} 函数盲目返回导致主线程死亡、进而拖垮 \texttt{tidle0} 空闲线程清扫器引发的 Stack Overflow 崩溃事故。
+    \item \textbf{网络异构传输}：确立了高频 TCP/HTTP（流媒体视频推流）加 低频 UDP/micro-ROS（语义坐标发布）的双通道方案。
+    \item \textbf{并发模型}：全系统运用非阻塞模式配合 \texttt{rt\_sem\_take} 休眠唤醒工作流。
+\end{enumerate}
+
+\section{问题与反思}
+\begin{itemize}
+    \item 发现 \texttt{clangd} 对于部分底层编译器私有宏（如 \texttt{ALIGN}）解析时存在跨行牵连报错问题，后均通过遵循现代 C++11 \texttt{alignas} 和标准 GNU 属性 \texttt{\_\_attribute\_\_((aligned(x)))} 规避。
+\end{itemize}
+
+\section{明日计划}
+\begin{itemize}
+    \item 继续完善 micro-ROS 基础通信环境。
+    \item 实现轻量级静态内存图像缓冲区。
+\end{itemize}
+
+\end{document}
